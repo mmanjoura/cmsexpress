@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sku": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "long_description": {
+      "type": "text",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "manufacture_details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "manufacture-details.manufacture-details"
+    },
+    "shipping_details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shipping-details.shipping-details"
+    },
+    "pricing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pricing.pricing"
+    },
+    "image_main": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "image_alternative": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "short_description": {
+      "type": "string",
+      "required": true
+    },
+    "delivery_method": {
+      "type": "text",
+      "required": true
+    },
+    "review": {
+      "type": "component",
+      "repeatable": false,
+      "component": "review.review"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5
+    },
+    "parent_category": {
+      "model": "parent"
+    }
+  }
+}

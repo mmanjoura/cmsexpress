@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shipping_details_shipping_details",
+  "info": {
+    "name": "shipping_details",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "weight": {
+      "type": "decimal"
+    },
+    "width": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "depth": {
+      "type": "decimal"
+    }
+  }
+}

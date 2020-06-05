@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "name": "cart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "session_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "products": {
+      "collection": "product"
+    }
+  }
+}

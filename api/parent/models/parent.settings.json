@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parents",
+  "info": {
+    "name": "parentCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "parent_category_title": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "categories.parent-categories"
+    }
+  }
+}

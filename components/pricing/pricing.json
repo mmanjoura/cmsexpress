@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_pricing_pricings",
+  "info": {
+    "name": "pricing",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "price_discount": {
+      "type": "decimal"
+    },
+    "price_voucher": {
+      "type": "decimal"
+    }
+  }
+}

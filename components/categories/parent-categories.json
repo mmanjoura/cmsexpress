@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_categories",
+  "info": {
+    "name": "category",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "child_category": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

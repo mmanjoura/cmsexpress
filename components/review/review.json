@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_review_reviews",
+  "info": {
+    "name": "review",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "review_title": {
+      "type": "string",
+      "required": false
+    },
+    "review_testimonial": {
+      "type": "text"
+    }
+  }
+}
